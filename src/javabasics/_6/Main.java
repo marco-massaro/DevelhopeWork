@@ -16,6 +16,9 @@ public class Main {
     private static void exercise1() {
         System.out.println("Exercise 1:");
         // Write your code here
+        double value = 9.99;
+        double valueSquareRoot = Math.sqrt(value);
+        System.out.println("The value is " + value + " and the square root of it is " + valueSquareRoot);
     }
 
     /**
@@ -32,10 +35,13 @@ public class Main {
         int valueA = 5;
         int valueB = 10;
 
-        System.out.println("Max=");
-        System.out.println("Min=");
+
 
         // Write your code here
+        System.out.println("Max=" + Math.max(valueA,valueB));
+        System.out.println("Min=" + Math.min(valueA,valueB));
+
+
     }
 
     /**
@@ -47,7 +53,8 @@ public class Main {
         int totalMoney = 50;
         int costPerBurger = 9;
         // Write your code here
-        System.out.println("Remainder=");
+        int remainder = totalMoney % costPerBurger;
+        System.out.println("Remainder=" + remainder);
     }
 
     /**
@@ -64,17 +71,17 @@ public class Main {
 
         double ourValue = 4.5;
 
-        // Replace with your comment 1
+        // rounds the number up as a double
         System.out.println(ourValue + " after using ceiling=" + Math.ceil(ourValue));
-        // Replace with your comment 2
+        // Rounds the number down as a double
         System.out.println(ourValue + " after using floor=" + Math.floor(ourValue));
-        // Replace with your comment 3
+        // Rounds the number up as a long
         System.out.println(ourValue + " after using round=" + Math.round(ourValue));
-        // Replace with your comment 4
+        // 4.5 to the power of 2 (exponents)
         System.out.println(ourValue + " after using powerOf with the value of 2=" + Math.pow(ourValue, 2));
-        // Replace with your comment 5
+        // 4.5 to the power of 3 (exponents)
         System.out.println(ourValue + " after using powerOf with the value of 3=" + Math.pow(ourValue, 3));
-        // Replace with your comment 6
+        // Multiplies our value with a random number
         System.out.println(ourValue + " times random =" + Math.random() * ourValue);
     }
 }

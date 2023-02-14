@@ -17,7 +17,6 @@ public class Main {
      * What do you think the function does? Name the function appropriately and make sure
      * <p>
      * return the appropriate result type
-     *
      */
     private static void exercise1() {
         System.out.println("Exercise 1:");
@@ -29,17 +28,18 @@ public class Main {
         System.out.println(conversionDescription);
         System.out.println(tempConverter(30));
     }
-    static String tempConverter(double celsius){
+
+    static String tempConverter(double celsius) {
         return celsius + " Celsius is " + (((celsius * 9) / 5) + 32) + " fahrenheit";
     }
 
     /**
      * 2: Create a function that processes and prints out all the names in the ArrayList
-     *
-     *    Make sure to put all the formatting code in the function, formatting:
-     *    1) to Upper case
-     *    2) Remove spaces at the start and the end
-     *    3) If the name contains any numbers, instead of returning the name, return "Invalid"
+     * <p>
+     * Make sure to put all the formatting code in the function, formatting:
+     * 1) to Upper case
+     * 2) Remove spaces at the start and the end
+     * 3) If the name contains any numbers, instead of returning the name, return "Invalid"
      */
     private static void exercise2() {
         System.out.println("\nExercise 2:");
@@ -50,9 +50,10 @@ public class Main {
             System.out.println(printer(name));
         }
     }
-    static String printer (String names){
+
+    static String printer(String names) {
         names = names.toUpperCase().trim();
-        if (names.matches(".*[0-9].*")){             //.*[0-9]*. TROVATO SU GOOGLE HEHEHE
+        if (names.matches(".*[0-9].*")) {             //.*[0-9]*. TROVATO SU GOOGLE HEHEHE
             return ("invalid");
         }
         return names;
@@ -70,10 +71,11 @@ public class Main {
         int weightInGrams = 500;
 
         // Call your function
-        lunchDetails(myLunchPrice,lunchType,description,weightInGrams);
+        lunchDetails(myLunchPrice, lunchType, description, weightInGrams);
 
     }
-    static void lunchDetails(double myLunchPrice, String lunchType, String description, int weightInGrams){
+
+    static void lunchDetails(double myLunchPrice, String lunchType, String description, int weightInGrams) {
         System.out.println("Lunch price is " + myLunchPrice + " my lunch is a " + lunchType + " it is a " + description
                 + " and it weighs " + weightInGrams + " grams");
     }

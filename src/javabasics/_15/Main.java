@@ -10,8 +10,8 @@ public class Main {
      * 1a: Edit this while loop to stop once our currentInvestmentValueEuros reaches €100,000
      * <p>
      * 1b: Change the same line, but now instead of currentInvestmentValueEuros reaching €100,000
-     *
-     *     Let's just run it for 5 years OR until it reaches €15,000 use || just like an if!
+     * <p>
+     * Let's just run it for 5 years OR until it reaches €15,000 use || just like an if!
      */
     private static void exercise1() {
         System.out.println("Exercise 1 - Compounding Interest:");
@@ -28,27 +28,27 @@ public class Main {
             double previousYearsInvestment = currentInvestmentValueEuros;
             currentInvestmentValueEuros = currentInvestmentValueEuros * perYearMultiplier;
             interestGainedThisYearEuros = currentInvestmentValueEuros - previousYearsInvestment;
-        }while (yearsPast <= 5 || currentInvestmentValueEuros <= 15000);
+        } while (yearsPast <= 5 || currentInvestmentValueEuros <= 15000);
     }
 
     /**
      * 2: Write a while loop for our trading bot!
-     *
-     *    The bot is going through a financial catastrophe! It's holding 10,000 great british pounds.
-     *
-     *    It wants to sell all of these as soon as possible! Before the state of Britain collapses, but it's a bit greedy.
-     *    It will only sell its pounds when the exchange rate is greater than 1.15 (poundToEuro)
-     *
-     *    On days where it sells, it can only sell 1000 pounds for euros.
-     *
-     *    Write a while loop
-     *
-     *    Use the calculation for exchange rate below
-     *    1 + (Math.random() * 0.2);
-     *
-     *    to recalculate our rate every day (once per loop)
-     *
-     *    Print the number of days it takes for our bot to sell its pounds
+     * <p>
+     * The bot is going through a financial catastrophe! It's holding 10,000 great british pounds.
+     * <p>
+     * It wants to sell all of these as soon as possible! Before the state of Britain collapses, but it's a bit greedy.
+     * It will only sell its pounds when the exchange rate is greater than 1.15 (poundToEuro)
+     * <p>
+     * On days where it sells, it can only sell 1000 pounds for euros.
+     * <p>
+     * Write a while loop
+     * <p>
+     * Use the calculation for exchange rate below
+     * 1 + (Math.random() * 0.2);
+     * <p>
+     * to recalculate our rate every day (once per loop)
+     * <p>
+     * Print the number of days it takes for our bot to sell its pounds
      */
     private static void exercise2() {
         System.out.println("Exercise 2 - Selling the pound:");
@@ -59,13 +59,13 @@ public class Main {
 
         // Write your while loop here
 
-        while (remainingPoundsToSell > 0){
+        while (remainingPoundsToSell > 0) {
             poundToEuroExchangeRate = 1 + (Math.random() * 0.2);
-            if (poundToEuroExchangeRate > 1.15){
+            if (poundToEuroExchangeRate > 1.15) {
                 remainingPoundsToSell -= maxPoundsToSellPerDay;
             }
             daysToSell++;
-            System.out.println("Today's exchange rate is "+ poundToEuroExchangeRate);
+            System.out.println("Today's exchange rate is " + poundToEuroExchangeRate);
             System.out.println("Today my remaining pounds are " + remainingPoundsToSell);
 
         }

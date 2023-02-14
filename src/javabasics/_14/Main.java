@@ -68,19 +68,19 @@ public class Main {
         int maxNumber = 0;
 
         // Write code here
-///        for (Integer i : items) {
-////            i = Math.min(items.get());
-////            minNumber = i; //??????
-////        }
-//        System.out.println(minNumber);
-        for (Integer item : items) {
-            if (item < minNumber){
-                minNumber = item;
-            }
-            if (item > maxNumber){
-                maxNumber = item;
-            }
+        for (Integer i : items) {
+            minNumber = Math.min(minNumber, i);
+            maxNumber = Math.max(maxNumber,i);
         }
+        System.out.println(minNumber);
+//        for (Integer item : items) {
+//            if (item < minNumber){
+//                minNumber = item;
+//            }
+//            if (item > maxNumber){
+//                maxNumber = item;
+//            }
+//        }
         System.out.println("The smallest number is " + minNumber);
         System.out.println("The largest number is " + maxNumber);
     }

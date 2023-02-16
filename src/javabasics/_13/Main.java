@@ -1,6 +1,8 @@
 package javabasics._13;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
+import java.util.Random;
+
 public class Main {
     public static void main(String[] args) {
         exercise1();
@@ -22,14 +24,20 @@ public class Main {
         ArrayList<Integer> numbers = new ArrayList<>();
 
         //Write your code here
-        numbers.add(5);
-        numbers.add(45);
-        numbers.add(100);
-        numbers.add(25);
-        numbers.add(44);
-        numbers.add(28);
-        numbers.add(32);
-        numbers.add(42);
+        Random nums = new Random();
+
+        for (int i = 0; i < 8; i++) {
+            int randoms = nums.nextInt();
+            numbers.add(randoms);
+        }
+//        numbers.add(5);
+//        numbers.add(45);
+//        numbers.add(100);
+//        numbers.add(25);
+//        numbers.add(44);
+//        numbers.add(28);
+//        numbers.add(32);
+//        numbers.add(42);
         System.out.println(numbers.get(0));
         numbers.remove(0);
         numbers.remove(0);

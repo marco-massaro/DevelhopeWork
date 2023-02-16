@@ -72,9 +72,14 @@ public class Main {
         System.out.println("Exercise 3:");
 
         LocalDate myDate = LocalDate.now();
+
         LocalDate myBirthday = LocalDate.of(1991, 3, 1);
         LocalDate herBirthday = LocalDate.of(1997, 4, 28);
-
+        System.out.println(myDate.getDayOfMonth());
+        System.out.println(myDate.getDayOfWeek());
+        System.out.println(myDate.getDayOfYear());
+        System.out.println(myDate.getMonth());
+        System.out.println(myDate.getMonthValue());
         System.out.println(myDate.isAfter(herBirthday));
     }
 }

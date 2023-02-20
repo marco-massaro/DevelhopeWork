@@ -1,28 +1,42 @@
 package javaoop.main;
 
 public class Lunch {
-    Double price = null;
-    String nameOfDayEaten = null;
-    int lunchWeightInGrams;
-
-    static Double maxLunchPrice = 5.50;
+    private Double price = null;
+    private String nameOfDayEaten = null;
+    private int lunchWeightInGrams;
+    private static double maxPrice = 5;
+    private int numberOfTimesWeHaveGotPrice = 0;
 
     Lunch(Double price, String nameOfDayEaten){
-        System.out.println("we ran our constructor1 here");
-        if (price >= maxLunchPrice){
-            System.out.println("Warning! Exceeded max lunch price. Not setting.");
-        }else {
-            System.out.println("Lunch price is okay. Setting now.");
-            this.price = price;
-        }
-        this.lunchWeightInGrams = 50;
-
+        this.price = price;
         this.nameOfDayEaten = nameOfDayEaten;
     }
-
-
     public void printLunch() {
         System.out.println("Lunch " + "price = " + price + ", nameOfDayEaten = '" + nameOfDayEaten + '\'' + ", lunch Weight in grams = "
                 + lunchWeightInGrams );
+    }
+    void setPrice(double price){
+        if (price > maxPrice){
+            System.out.println("Cannot set greater than max price");
+        }else{
+            this.price = price;
+        }
+
+    }
+    Double getPrice(){
+        numberOfTimesWeHaveGotPrice ++;
+        return this.price;
+    }
+    int getNumberOfTimesWeHaveGotPrice(){
+        return this.numberOfTimesWeHaveGotPrice;
+    }
+    public String getNameOfDayEaten(){
+        return nameOfDayEaten;
+    }
+    public int getLunchWeightInGrams() {
+        return lunchWeightInGrams;
+    }
+    public static double getMaxPrice(){
+        return maxPrice;
     }
 }

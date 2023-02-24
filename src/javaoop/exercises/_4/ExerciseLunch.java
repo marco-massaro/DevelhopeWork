@@ -61,7 +61,6 @@ public class ExerciseLunch {
         } else{
             this.price = price;
         }
-
     }
 
     public void setNameOfDayEaten(String nameOfDayEaten) {
@@ -80,7 +79,6 @@ public class ExerciseLunch {
         }else{
             this.lunchWeightInGrams = lunchWeightInGrams;
         }
-
     }
 
     private void setNumberOfTimesWeHaveGotPrice(int numberOfTimesWeHaveGotPrice) {

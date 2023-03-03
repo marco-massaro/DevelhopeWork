@@ -55,6 +55,7 @@ public class Exercises {
                 mostExpensiveMenuItemName = entry.getKey();
             }
         }
+
         if (mostExpensiveMenuItemName.equals("Pizza")) {
             System.out.println("2a. Correct!");
         } else {

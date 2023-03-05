@@ -85,34 +85,34 @@ public class Exercises {
      *    Answer: Map. Maps REQUIRE us to use a key and a value for each entry, in this case: Students.
      *
      *    3 - You want to store the countries in the world in order of age
-     *    Answer: Map. Maps allow us to store the information we want in a certain order without duplicates
+     *    Answer: List. You can create country objects and give them the age attribute and sort them in a list using the .sort() method
      *
      *    4 - You want to store the products available for purchase in an online store, along with their corresponding prices.
-     *    Answer: Maps are perfect for catalogues.
+     *    Answer: Maps are perfect for catalogues. The key can be a String called product name and the value can be a Double called price
      *
      *    5 - You want to store the employees at a company in the order you added them
      *    Answer: List. Lists store information in exactly this order
      *
      *    6 - You want to store the cities in a particular state, along with their populations.
-     *    Answer: Map. I would use a map for any task that requires more than one piece of data
+     *    Answer: Map. The key would be a string named cityName and the value is an Integer named popuplation
      *
      *    7 - You want to store the books in a library, along with their authors and publication dates.
-     *    Answer: Set. Sets guarantee that there won't be any duplicates ?
+     *    Answer: Map. The key = bookTitle and the value = a Book object containing information such as author + publication dates.
      *
      *    8 - You want to store the courses offered at a university, along with the professors teaching each course.
-     *    Answer: I'm not gonna lie, Greg wasn't very clear on the differences so I'm still convinced Maps are perfect for this
+     *    Answer: Map. Key = string called courseName and the value = a List or a Set of professor names teaching that course.
      *
      *    9 - You want to store the movies in a movie rental store, along with their ratings and release dates.
-     *    Answer: // / / / / /    ASK MARCO :'(
+     *    Answer:List or Map. I personally would prefer a map but it depends on whether I want to access the movies by their titles or sequentially
      *
      *    10 - You want to store the flights available for booking on an airline, along with their destinations and departure times.
-     *    Answer: / / / / / /    ASK MARCO :'(
+     *    Answer:List or Map depending on how I want to access the info. If I want to access the flights by their destination instead of their index, a Map is better
      *
      *    11 - You want to store the articles on a news website, along with their titles and publication dates.
-     *    Answer: / / // / / / / / /    ASK MARCO :'(
+     *    Answer: List or Map again based on access preference. I prefer Maps: key = article title and value = an Article object containing info
      *
      *    12 - You want to store the songs in a music streaming service, along with their artists and album names.
-     *    Answer: / / / // / / / / /     ASK MARCO :'(
+     *    Answer:List or Map. I prefer Maps: key = String songname and the value = a Song object containing info about the song
      */
 
 }

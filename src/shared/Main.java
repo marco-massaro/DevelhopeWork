@@ -45,13 +45,14 @@ public class Main {
         return orders;
     }
 
-    private static Map<String, Meal> generateMenu() {
+    public static Map<String, Meal> generateMenu() {
         Map<String, Meal> menu = new HashMap<>();
 
         menu.put("Burger", new Meal(7.80,500, Set.of(Ingredient.BUN,Ingredient.PATTY,Ingredient.SAUCE)));
         menu.put("Cheese Burger", new Meal(7.80,500, Set.of(Ingredient.BUN,Ingredient.PATTY,Ingredient.CHEESE,Ingredient.SAUCE)));
         menu.put("Fries", new Meal(3.50,250, Set.of(Ingredient.POTATO,Ingredient.OIL)));
         menu.put("Pizza", new Meal(10.00,700, Set.of(Ingredient.DOUGH,Ingredient.CHEESE,Ingredient.TOMATO)));
+        menu.put("Cheesy Potato", new Meal(10.0,700,Set.of(Ingredient.CHEESE,Ingredient.POTATO)));
         return menu;
     }
 

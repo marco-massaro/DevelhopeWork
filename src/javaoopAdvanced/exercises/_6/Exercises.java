@@ -97,9 +97,9 @@ public class Exercises {
         // Your code here
         Days weekendDay = Days.SATURDAY;
         if (weekendDay.isWeekend()) {
-            System.out.println("Weekday");
+            System.out.println("Weekend!");
         } else {
-            System.out.println("Weekend");
+            System.out.println("Weekday!");
         }
     }
 

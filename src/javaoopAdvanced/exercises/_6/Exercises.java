@@ -1,4 +1,4 @@
-package javaadvanced._6;
+package javaoopAdvanced.exercises._6;
 
 import javaoopAdvanced.exercises._6.Days;
 import javaoopAdvanced.exercises._6.Operator;

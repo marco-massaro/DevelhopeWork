@@ -12,16 +12,5 @@ public class Course {
     int monthsOfCourse;
     List<Student> students = new ArrayList<>();
 
-    @Override
-    public String toString() {
-        return "Course{" +
-                "courseName='" + courseName + '\'' +
-                ", maxStudents=" + maxStudents +
-                ", courseAge=" + courseAge +
-                ", qualityRatingOutOf10=" + qualityRatingOutOf10 +
-                ", tutorName='" + tutorName + '\'' +
-                ", monthsOfCourse=" + monthsOfCourse +
-                ", students=" + students +
-                '}';
-    }
+
 }

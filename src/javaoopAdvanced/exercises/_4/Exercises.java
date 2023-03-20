@@ -78,10 +78,7 @@ public class Exercises {
 
         try {
             // Your code here
-            Files.readString(MY_PATH).split("\n");
-            for (int i = 0; i < MY_PATH.toFile().length(); i++) {
-                System.out.println(i);
-            }
+            System.out.println(Files.readString(MY_PATH).split("\n").length);
         } catch (Exception exception) {
             System.err.println("There was an error!");
             exception.printStackTrace();

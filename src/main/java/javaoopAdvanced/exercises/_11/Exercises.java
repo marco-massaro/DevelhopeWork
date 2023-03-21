@@ -65,7 +65,7 @@ public class Exercises {
         BigInteger bigBoi = new BigInteger("200023200004000000004500000");
         BigDecimal bigDecBoi = new BigDecimal("0.00000000000000000000001");
         BigInteger biggerBoi = bigBoi.divide(new BigInteger("3"));
-        BigDecimal dividedBoi = bigDecBoi.divide(new BigDecimal(3), RoundingMode.HALF_UP); // had to google this
+        BigDecimal dividedBoi = bigDecBoi.divide(new BigDecimal(Math.PI), RoundingMode.HALF_UP); // had to google this
 
         System.out.println(biggerBoi);
         System.out.println(dividedBoi);
